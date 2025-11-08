@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status - Fooduck</title>
+    <link rel="stylesheet" href="status-order.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo-name">
+            <img src="images/duck.png" class="logo" alt="Fooduck Logo">
+            <h1 class="fooduck">Fooduck</h1>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="HomePage.html" class="nav-bar-button">Home</a></li>
+                <li><a href="status-order.html" class="nav-bar-button active">Order Status</a></li>
+                <li><a href="#" class="nav-bar-button">Settings</a></li>
+            </ul>
+        </div>
+        <button class="profile-btn" onclick="window.location.href='profile.html'">
+            <span class="profile-initial">U</span>
+        </button>
+    </nav>
+
+    <div class="status-container">
+        <h2>Your Orders</h2>
+        
+        <div class="orders-list" id="orders-list">
+            <p class="no-orders">No active orders</p>
+        </div>
+    </div>
+
+    <script src="status-order.js"></script>
+</body>
+</html>
