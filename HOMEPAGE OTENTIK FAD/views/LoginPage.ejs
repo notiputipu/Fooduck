@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fooduck Login</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="/styleLoginPage/LoginPage.css" />
+</head>
+<body>
+  <div class="login-box">
+    <div class="logo-container">
+      <div class="logo-title">
+        <img src="/images/duck.png" class="duck-png" alt="duck.png">
+        <h1 class="logo">Fooduck</h1>
+      </div>
+      <p class="fooduck-desc">Food and drink ordering platform for the Faculty of Biology and Geography cafeteria — order quickly, pick up easily, and enjoy without long lines.</p>
+    </div>
+    <div class="login-container">
+      <div class="login-card">
+        <h2 class="signin-text">Sign In</h2>
+        <p class="subtitle">Login to order the best kind of food on Fooduck.</p>
+
+        <% if (typeof error !== "undefined") { %>
+          <p class="error"><%= error %></p>
+        <% } %>
+
+        <form method="post" action="/login">
+          <div class="input-group">
+            <input type="email" id="email" name="email" placeholder="Email" required />
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="password" name="password" placeholder="Password" required />
+          </div>
+
+          <button type="submit" class="login-btn">Login</button>
+
+          <p class="signup-text">
+            Haven't made an account?
+            <a href="/register">Sign up</a> now!
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
