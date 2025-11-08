@@ -1,0 +1,204 @@
+/* ===== Global Styles ===== */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: white;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-box {
+  padding: 2rem;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+  scale: 0.9;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+  display: grid;
+  align-items: center;
+
+  /* Center horizontally */
+  margin: 0 auto;
+}
+
+/* ===== Login Card ===== */
+.login-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  height: 449px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  border-radius: 20px;
+  text-align: center;
+  height: auto; /* Adjusts with content */
+  padding: 2rem;
+  background: none; /* No background box */
+  box-shadow: none; /* No shadow */
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column; /* stacks items top-to-bottom */
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  background-color: #A1C14B;
+  border-radius: 80px 500px 500px 80px;
+  position: absolute;
+}
+
+.duck-png {
+  width: 100px;
+  display: inline-block;
+  align-items: center;
+  justify-items: center;
+  border-radius: 100%;
+  
+}
+
+.fooduck-desc {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1rem auto 1rem;
+  padding: 0 100px;
+  position: relative;
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto 0rem;
+  padding: 0.3rem 0rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 4.8rem;
+  color: #F3CE6E ;
+  display: inline-block;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 3rem;
+  padding: 0% !important;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* ===== Input Fields ===== */
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0%;
+}
+
+.input-group label {
+  display: block;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 25px;
+  border: 2px solid #F5F5F5;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+  margin: auto;
+  background-color: #F5F5F5;
+}
+
+.input-group input:focus {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 25px;
+  border: 2px solid #A1C14B;
+  font-size: 0.95rem;
+  margin: auto;
+  background-color: #F5F5F5;
+}
+
+/* ===== Button ===== */
+.login-btn {
+  width: 72%;
+  background: #E0912F;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: rgb(205, 132, 42);
+}
+
+.login-btn:active {
+  scale: 0.98;
+}
+
+/* ===== Signup Text ===== */
+.signup-text {
+  margin-top: 20px;
+  color: #555;
+}
+
+.signup-text a {
+  color: #E0912F;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  color: #D35B50;
+  text-decoration: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+}
