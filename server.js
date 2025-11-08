@@ -55,7 +55,8 @@ app.use(session({
 }));
 
 // Database connection
-const db = new sqlite3.Database('./auth.db', (err) => {
+const DB_PATH = process.env.DATABASE_FILE || './auth.db';
+const db = new sqlite3.Database(DB_PATH, (err) => {
     if (err) {
         console.error('Error connecting to database:', err);
     } else {
@@ -338,4 +339,5 @@ process.on('SIGINT', () => {
         }
         process.exit(0);
     });
+
 });
